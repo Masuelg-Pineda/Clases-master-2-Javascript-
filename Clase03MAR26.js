@@ -2,7 +2,7 @@ if (true) {
     var nombre = "Jostin";
 }
 
-console.log(nombre); // VAR NO respeta el alcance del bloque
+//console.log(nombre); // VAR NO respeta el alcance del bloque
 
 //var permite redeclarar y reasignar 
 var x = 1;
@@ -68,3 +68,24 @@ console.log(frase1);
 //Template literal
 let frase2 = `Hola soy ${perro} y mi platillo favorito es el ${comida}`;
 console.log(frase2);
+
+const persona = {nombre: "Jostin", edad: 26, ciudad: "Bogotá"};
+const {nombre, edad, ciudad} = persona; //Desestructuración de objetos
+console.log(nombre);
+console.log(edad);
+console.log(ciudad);
+
+const promesa = new Promise(function(resolve, reject) {
+    const exito = true;
+
+    if (exito) { //Un if evalua una condicion inmediatamente
+        resolve("Todo salió bien");
+    } else {
+        reject("Algo salió mal");
+    }
+});
+
+//Cuando esta promesa termine con exito, entonces ejecuta esta funcion
+promesa.then(function(resultado) {
+    console.log(resultado);
+});
