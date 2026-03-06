@@ -49,7 +49,7 @@ export const CalcularCosto = ({
     const total = subtotal * (1 - descuento);
 
     //Redondear el resultado
-    return Math.round
+    return Math.round(total);
  };
 
  /* esto seria sin usar operador ternario
