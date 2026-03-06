@@ -3,7 +3,7 @@ const COSTODESTINO = {
     Paris: 500,
     Londres: 400,
     NuevaYork: 600,
-    Madrid: 350
+    Madrid: 350,
     Tokyo: 700,
 };
 
