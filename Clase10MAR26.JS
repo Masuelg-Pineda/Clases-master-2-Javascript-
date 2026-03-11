@@ -61,3 +61,29 @@ console.log(encontrado)
 const pares = numeros.filter((n) => n % 2 === 0)
 console.log("Original: " , numeros)
 console.log("Copia de Pares: " , pares)
+
+//El metodo map() crea un nuevo arreglo pero con el resultado de la funcion
+
+const precios = [100, 200, 300, 600, 400]
+const preciosconIVA = precios.map((p) => {
+    const iva = p * 0.16;
+    const total = p + iva;
+    return total; //Esto se guarda en el nuevo arreglo
+});
+
+console.log("Originales: ", precios)
+console.log("Con IVA: ", preciosconIVA)
+
+//El metodo foreach() NO es para construir un nuevo arreglo, es para ejecutar una funcion por cada elemento del arreglo
+const apellidos = ["Gomez", "Perez", "Lopez"]
+
+apellidos.forEach((apellido, index)=> {
+    console.log("Posicion " , index , " Apellido: " , apellido)
+})
+
+//El metodo some() nos va a decir si existe AL MENOS un elemento que cumpla con la condicion
+const preciosNuevos = apellidos.some((p) => p === "Lopez");
+console.log(preciosNuevos)
+
+//El metodo every() es si todos cumplen
+//El method sort() ordena...
