@@ -86,4 +86,6 @@ const preciosNuevos = apellidos.some((p) => p === "Lopez");
 console.log(preciosNuevos)
 
 //El metodo every() es si todos cumplen
+const
+
 //El method sort() ordena...
