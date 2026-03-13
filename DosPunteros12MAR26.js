@@ -42,17 +42,17 @@ function esPalindromo(texto) {
     // Texto homogeneo sin espacios ni mayusculas
     texto = texto.toLowerCase().replace(/\s/g, "");
 
-    let izquierda = 0;
-    let derecha = texto.length - 1;
+    let izquierda = 0; //Puntero inicia al principio 
+    let derecha = texto.length - 1; //Puntero inicia al final
 
-    while (izquierda < derecha) {
+    while (izquierda < derecha) { //Para que no se toquen los punteros
 
-        if (texto[izquierda] !== texto[derecha]) {
+        if (texto[izquierda] !== texto[derecha]) { //Si son diferentes
             return false; // Si no coinciden, no es palíndromo
         }
 
-        izquierda++;
-        derecha--;
+        izquierda++; //Se mueve puntero a la derecha
+        derecha--; //Se mueve puntero a la izquierda
     }
 
     return true; // Si nunca falló, sí es palíndromo
@@ -62,3 +62,5 @@ let frase = "Anita lava la tina";
 console.log(esPalindromo(frase));
 let frase2 = "OSo";
 console.log(esPalindromo(frase2));
+let frase3 = "caca";
+console.log(esPalindromo(frase3));
