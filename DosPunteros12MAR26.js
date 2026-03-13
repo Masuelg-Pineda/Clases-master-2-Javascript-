@@ -29,6 +29,36 @@ function encontrarPar(arr, objetivo) {
     return null;
 }
 
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let resultado = encontrarPar(numeros, 9);
-console.log(resultado); // Debería imprimir [1, 8] o [2, 7] o [3, 6] o [4, 5] dependiendo de la implementación.
+let numeros = [2, 4, 7, 10, 11, 15, 20, 40, 80];
+let resultado = encontrarPar(numeros, 25);
+console.log(resultado); // Debería imprimir [2, 60] o [4, 58] o [7, 55] o [42, 20] dependiendo de la implementación.
+
+//Ejercicio; crear una funcion que revise si un string espalindromo(string)
+//Anita lava la tina
+//radar
+//Palabra extra
+
+function esPalindromo(texto) {
+    // Texto homogeneo sin espacios ni mayusculas
+    texto = texto.toLowerCase().replace(/\s/g, "");
+
+    let izquierda = 0;
+    let derecha = texto.length - 1;
+
+    while (izquierda < derecha) {
+
+        if (texto[izquierda] !== texto[derecha]) {
+            return false; // Si no coinciden, no es palíndromo
+        }
+
+        izquierda++;
+        derecha--;
+    }
+
+    return true; // Si nunca falló, sí es palíndromo
+}
+
+let frase = "Anita lava la tina";
+console.log(esPalindromo(frase));
+let frase2 = "OSo";
+console.log(esPalindromo(frase2));
