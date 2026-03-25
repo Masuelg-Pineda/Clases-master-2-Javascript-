@@ -12,6 +12,6 @@ function countdown(n){
 
     //Llamada recursiva (reducimos el problema)
     countdown(n-1);
-    console.log
+    console.log("Saliendo de n= ", n);
 }
 countdown(5);
