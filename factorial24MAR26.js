@@ -12,13 +12,13 @@ function factorial(n){
         console.log(`Caso base: factorial(0) = 1`)
         return 1;
     }
-    
+
     const resultado = n * factorial (n-1);
     console.log(`Retornando ${resultado} para n= ${n}`);
 
     //Llamada recursiva
     //n! = n * (n-1)!
-    return n * factorial(n-1);
+    return resultado;
 }
 
 console.log(factorial(5));
@@ -32,3 +32,4 @@ console.log(factorial(5));
 = 5 * 4 * 3 * 2 * 1 * 1
 =120 */
 
+//Recursion es la tecnica general
