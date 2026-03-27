@@ -27,7 +27,7 @@ function binarySearch(arr, target, low = 0, high = arr.length - 1){
     }else {
         //Buscar en la mitad derecha
         console.log("Buscamos en la mitad derecha")
-        return binarySearch(arr, target, low, mid + 1, high);
+        return binarySearch(arr, target, mid + 1, high);
     }
 }
 
