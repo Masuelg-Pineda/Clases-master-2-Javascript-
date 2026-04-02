@@ -1,0 +1,2 @@
+//Este es un ejemplo
+//Hola estamos aprendiendo manejo de archivo con Node.js
